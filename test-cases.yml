@@ -1,0 +1,576 @@
+---
+- summary: |
+    Успешная регистрация пользователя через электронную почту
+  requirement: |
+    Пользователь должен быть успешно зарегистрирован с использованием электронной почты
+  prerequisites: |
+    Пользователь не должен иметь действующего аккаунта с данной электронной почтой
+    Открыта страница https://codebattle.hexlet.io/
+  test-data: |
+    Nickname: test-play
+    Email: test-play@google.com
+    Password: test-play
+  steps:
+    - Нажимаем кнопку "Sign Up"
+    - Вводим Nickname test-play
+    - Вводим Email test-play@google.com
+    - Вводим Password
+    - Вводим Password в Password Confirmation
+    - Нажимаем "Submit"
+  expected-result: |
+    Пользователь успешно зарегистрирован. Открывается главная страница https://codebattle.hexlet.io/#lobby
+
+- summary: |
+    Проверка невозможности зарегистрироваться с уже существующим nickname
+  requirement: |
+    Nickname пользователя должен быть уникальным
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка невозможности зарегистрироваться с одним email дважды
+  requirement: |
+    Только один пользователь может зарегистрироваться с одним Email
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка пароля на соответствие требованию
+  requirement: |
+    Пароль должен содержать в себе от 6 до 16 символов
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Успешная авторизация через GitHub
+  requirement: |
+    Пользователь успешно авторизуется через личный кабинет GitHub
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Успешная авторизация через Discord
+  requirement: |
+    Пользователь успешно авторизуется через личный кабинет Discord
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Успешная авторизация через электронную почту
+  requirement: |
+    Пользователь должен успешно авторизоваться с использованием электронной почты
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности запустить игру без регистрации
+  requirement: |
+    Пользователь может запустить игру без регистрации
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности поменять язык программирования для решения задачи в игре
+  requirement: |
+    Пользователь может поменять язык для решения задачи
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности сменить язык для чтения задачи
+  requirement: |
+    Пользователь может поменять язык для чтения задачи
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности прочитать краткое руководство к игре через кнопку "Show guide"
+  requirement: |
+    Пользователь может посмотреть руководство в игре
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности смены фона в редакторе кода
+  requirement: |
+    Пользователь может поменять фон в редакторе кода
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности проверить решение использовав кнопку "Run"
+  requirement: |
+    Пользователь может проверить свое решение 
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности сдаться через кнопку "Give up"
+  requirement: |
+    Пользователь может сдаться во время игры
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности сбросить решение через кнопку "Reset Solution"
+  requirement: |
+    Пользователь может сбросить все решение в редакторе кода
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности вывести описание задания в центр экрана через кнопку "Expand"
+  requirement: |
+    Пользователь может вывести описание задачи в центр экрана
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка работы редактора кода
+  requirement: |
+    Пользователь может вставлять, удалять и печатать в редакторе кода
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка работы кнопки "Back to Home"
+  requirement: |
+    Пользователь из игрф может вернуться на главный экран
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности повторить игру через кнопку "Try again"
+  requirement: |
+    Пользователь может попробовать еще раз пройти игру
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности создать игру с ботом
+  requirement: |
+    Пользователь может создать игру с ботом
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности создать игру с другим пользователем
+  requirement: |
+    Пользователь может создать игру с другим пользователем
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности создать игру с другом из списка друзей
+  requirement: |
+    Пользователь может создать игру с другом из списка друзей
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности сменить имя в настройках
+  requirement: |
+    Пользователь может поменять свое имя
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности создать турнир
+  requirement: |
+    Пользователь может создать свой турнир
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности участвовать в турнире
+  requirement: |
+    Пользователь может участвовать в турнире
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности отказаться от участия в турнире
+  requirement: |
+    Пользователь может отказаться от участия в турнире
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка успешного подключения к игре, созданной другим пользователем через кнопку "Fight"
+  requirement: |
+    Пользователь может подключиться к игре, созданной другим пользователем
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности просмотреть историю игр
+  requirement: |
+    Пользователь может промотреть свою историю игр
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности выбора типа звука для игры
+  requirement: |
+    Пользователь может выбрать звук из представленных для игры
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности просмотра рейтинга пользователей за неделю
+  requirement: |
+    Пользователь может просматривать рейтинг пользователей за неделю
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности изменения количества пользователей на странице рейтинга пользователя
+  requirement: |
+    Пользователь может изменять количество пользователей отображающихся на страницце рейтинга пользователей
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка работоспособности чек-бокса "With bots"
+  requirement: |
+    Количество пользователей в рейтинге должно учитывать ботов при отображении списка пользователей 
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности выиграть в игре 
+  requirement: |
+    Пользователь может выиграть в игре 
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности проиграть в игре
+  requirement: |
+    Пользователь может проиграть в игре
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности сиграть в ничью в игре
+  requirement: |
+    Пользователь может сиграть в ничью в игре
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности создать задачу 
+  requirement: |
+    Пользователь может создать свою задачу
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    Проверка возможности просмотреть задачу других пользователей
+  requirement: |
+    Пользователь может просмотреть задачу других пользователей
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
+
+- summary: |
+    
+  requirement: |
+    
+  prerequisites:
+    
+  test-data: |
+    
+  steps:
+    - 
+    - 
+    - 
+  expected-result: |
+    
