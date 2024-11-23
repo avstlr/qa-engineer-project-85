@@ -247,374 +247,365 @@
   requirement: |
     Пользователь может сдаться во время игры
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Give up"
+    - Подтверждаем свое решение сдаться
   expected-result: |
-    
+    Пользователю присваивается поражение в игре, победителем становится автоматически противник
 
 - summary: |
     Проверка возможности сбросить решение через кнопку "Reset Solution"
   requirement: |
     Пользователь может сбросить все решение в редакторе кода
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Печатаем текст в редакторе кода
+    - Нажимаем кнопку "Reset Solution"
   expected-result: |
-    
+    Поле в редакторе кода принимает первоначальный вид, записанный текст исчезает
 
 - summary: |
     Проверка возможности вывести описание задания в центр экрана через кнопку "Expand"
   requirement: |
     Пользователь может вывести описание задачи в центр экрана
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Expand"
   expected-result: |
-    
+    Описание задачи открывается в одтельном окне по центру экрана
 
 - summary: |
     Проверка работы редактора кода
   requirement: |
     Пользователь может вставлять, удалять и печатать в редакторе кода
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Печатаем любой текст
+    - Копируем и вставляем любой текст или слово
+    - Удалем любой фрагмент текста в редакторе кода
   expected-result: |
-    
+    Текст печатается, удаляется и вставляется
 
 - summary: |
     Проверка работы кнопки "Back to Home"
   requirement: |
-    Пользователь из игрф может вернуться на главный экран
+    Пользователь из игры может вернуться на главный экран
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Back to Home"
   expected-result: |
-    
+    Пользователя возвращает на главный экран игры
 
 - summary: |
-    Проверка возможности повторить игру через кнопку "Try again"
+    Проверка возможности повторить игру через кнопку "Rematch"
   requirement: |
     Пользователь может попробовать еще раз пройти игру
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - После завершения раунда, нажимаем на кнопку "Rematch"
   expected-result: |
-    
+    Запускается повторно завершенная игра
 
 - summary: |
     Проверка возможности создать игру с ботом
   requirement: |
     Пользователь может создать игру с ботом
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - Выбираем Level 1
+    - Нажимаем кнопку "Create a game"
+    - Выбираем Level, например 1
     - Выбираем Game Type: With a bot
-    - Выбираем Time control: 10 min
+    - Выбираем Time control, например 10 min
     - Выбираем игру из выпадающего списка Choose task by name or tags, например "rect_area"
     - Нажимаем "Create battle"
   expected-result: |
-    
+    Запускается игра, в качестве противника бот
 
 - summary: |
     Проверка возможности создать игру с другим пользователем
   requirement: |
     Пользователь может создать игру с другим пользователем
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Create a game"
+    - Выбираем Level, например 1
+    - Выбираем Game Type: With other user
+    - Выбираем Time control, например 10 min
+    - Выбираем игру из выпадающего списка Choose task by name or tags, например "rect_area"
+    - Нажимаем "Create battle"
   expected-result: |
-    
+    Запускается игра, в качестве противника другой пользователь 
 
 - summary: |
     Проверка возможности создать игру с другом из списка друзей
   requirement: |
     Пользователь может создать игру с другом из списка друзей
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Create a game"
+    - Выбираем Level, например 1
+    - Выбираем Game Type: With a friend
+    - Выбираем Time control, например 10 min
+    - В выпадающем списке Choose opponent выбираем друга из списка
+    - Выбираем игру из выпадающего списка Choose task by name or tags, например "rect_area"
+    - Нажимаем "Create battle"
   expected-result: |
-    
+    Запускается игра, в качестве противника пользователь из списка друзей
 
 - summary: |
     Проверка возможности сменить имя в настройках
   requirement: |
     Пользователь может поменять свое имя
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    Nickname: test-play1
   steps:
-    - 
-    - 
-    - 
+    - Заходим в Settings
+    - В поле Your name вводим test-play1
+    - Нажимаем Save
   expected-result: |
-    
+    Nickname профиля меняется
 
 - summary: |
     Проверка возможности создать турнир
   requirement: |
     Пользователь может создать свой турнир
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Заходим в Tournaments
+    - В поле Create a new tornaments вводим в поле Name название турнира, например Test
+    - Нажимаем Create
   expected-result: |
-    
+    Создается турнир с заданными параметрами
 
 - summary: |
     Проверка возможности участвовать в турнире
   requirement: |
     Пользователь может участвовать в турнире
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Заходим в Tournaments
+    - В одной строке с действующим турниром нажимаем "Show"
+    - Открывается турнир
+    - Нажимаем Join
   expected-result: |
-    
+    Пользователь появился в списке участников турнира
 
 - summary: |
     Проверка возможности отказаться от участия в турнире
   requirement: |
     Пользователь может отказаться от участия в турнире
   prerequisites:
-    
+    Открыта страница c турниром, где пользователь является участником
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Leave"
   expected-result: |
-    
+    Пользователь исчезает из списка участников турнира
 
 - summary: |
     Проверка успешного подключения к игре, созданной другим пользователем через кнопку "Fight"
   requirement: |
     Пользователь может подключиться к игре, созданной другим пользователем
   prerequisites:
-    
+    https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку кнопку "Fight"
   expected-result: |
-    
+    Открывается игра, созданная другим пользователем
 
 - summary: |
     Проверка возможности просмотреть историю игр
   requirement: |
     Пользователь может промотреть свою историю игр
   prerequisites:
-    
+    https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Заходим в My profile
+    - Нажимаем Completed Games
   expected-result: |
-    
+    Открывается история игр пользователя
 
 - summary: |
     Проверка возможности выбора типа звука для игры
   requirement: |
     Пользователь может выбрать звук из представленных для игры
   prerequisites:
-    
+    https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Заходим в Settings
+    - Выбираем тип звука Select sound type, например CS
+    - Нажимаем Save
   expected-result: |
-    
+    Высвечивается сообщение об успешном сохранении данных 
 
 - summary: |
     Проверка возможности просмотра рейтинга пользователей за неделю
   requirement: |
     Пользователь может просматривать рейтинг пользователей за неделю
   prerequisites:
-    
+    https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - В Leaderboard нажимаем Top list
+    - Открывается страница с рейтингом пользователей
+    - Нажимаем weekly
   expected-result: |
-    
+    Появляется рейтинг пользователей за неделю
 
 - summary: |
     Проверка возможности изменения количества пользователей на странице рейтинга пользователя
   requirement: |
     Пользователь может изменять количество пользователей отображающихся на страницце рейтинга пользователей
   prerequisites:
-    
+    Открыта страница с рейтингом пользователей
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - В выпадающем списке рядом с Users per page выбираем например 30
   expected-result: |
-    
+    Колличество пользователей отображающихся на странице меняется на 30
 
 - summary: |
     Проверка работоспособности чек-бокса "With bots"
   requirement: |
-    Количество пользователей в рейтинге должно учитывать ботов при отображении списка пользователей 
+    Число пользователей в рейтинге должно учитывать ботов при отображении списка пользователей 
   prerequisites:
-    
+    Открыта страница с рейтингом пользователей
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем чек-бокс With bots
   expected-result: |
-    
+    Число пользователей, отображающихся в рейтенге, должно измениться в большую сторону
 
 - summary: |
     Проверка возможности выиграть в игре 
   requirement: |
     Пользователь может выиграть в игре 
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - В редакторе кода пишем верное решение задачи
+    - Нажимаем Run
   expected-result: |
-    
+    У пользователя появляется сообщение о победе в игре
 
 - summary: |
     Проверка возможности проиграть в игре
   requirement: |
     Пользователь может проиграть в игре
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Ожидаем пока противник решит задачу
   expected-result: |
-    
+    У пользователя появляется сообщение о проигрыше в игре
 
 - summary: |
     Проверка возможности сиграть в ничью в игре
   requirement: |
     Пользователь может сиграть в ничью в игре
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем "Create a game"
+    - Выбираем в качестве противника, например With a bot
+    - Time control выставляем например 3 минуты
+    - Нажимаем Create battle
+    - Дожидаемся окончания игры
   expected-result: |
-    
+    У пользователя появляется сообщение, что победителей в игре нет
 
 - summary: |
     Проверка возможности создать задачу 
   requirement: |
     Пользователь может создать свою задачу
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем Tasks
+    - Нажимаем Create new task 
   expected-result: |
-    
+    Пользователь может создать задачу
 
 - summary: |
     Проверка возможности просмотреть задачу других пользователей
   requirement: |
     Пользователь может просмотреть задачу других пользователей
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем Tasks
+    - В одной строке с любой задачей нажимаем "Show"
   expected-result: |
-    
+    Пользователю доступна задача другого пользователя для просмотра
 
 - summary: |
-    
+    Проверка возможности создать свой пакет задач
   requirement: |
-    
+    Пользователь может создать свой пакет задач
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/#lobby
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем Tasks
+    - Нажимаем Task packs
+    - Нажимаем Create new task pack
+    - Заполняем форму для создания новой задачи
+    - Нажимаем Save
   expected-result: |
-    
+    Создается пакет задач
