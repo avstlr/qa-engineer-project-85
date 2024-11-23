@@ -25,180 +25,222 @@
   requirement: |
     Nickname пользователя должен быть уникальным
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/
   test-data: |
-    
+    Nickname: test-play
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Sign Up"
+    - Вводим Nickname test-play
+    - Вводим Email, например qwer@google.com
+    - Вводим Password, например qwerty
+    - Вводим Password в Password Confirmation
+    - Нажимаем "Submit"
   expected-result: |
-    
+    Выводится предупреждающее сообщение, что nickname занят
 
 - summary: |
     Проверка невозможности зарегистрироваться с одним email дважды
   requirement: |
     Только один пользователь может зарегистрироваться с одним Email
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/
   test-data: |
-    
+    Email test-play@google.com
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Sign Up"
+    - Вводим Nickname, например qqqazzz
+    - Вводим Email test-play@google.com
+    - Вводим Password, например qwerty
+    - Вводим Password в Password Confirmation
+    - Нажимаем "Submit"
   expected-result: |
-    
+    выводится предупреждающее сообщение, что email занят
 
 - summary: |
-    Проверка пароля на соответствие требованию
+    Проверка пароля из 4 символов на соответствие требованию
   requirement: |
     Пароль должен содержать в себе от 6 до 16 символов
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/
   test-data: |
-    
+    Password: qwer
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Sign Up"
+    - Вводим Nickname, например qqqazzz
+    - Вводим Email, например qwer@google.com
+    - Вводим Password qwer
+    - Вводим Password в Password Confirmation
+    - Нажимаем "Submit"
   expected-result: |
-    
+    Выводится предупреждающее сообщение, что пароль должен содержать в себе от 6 до 16 символов
+
+- summary: |
+    Проверка пароля из 17 символов на соответствие требованию
+  requirement: |
+    Пароль должен содержать в себе от 6 до 16 символов
+  prerequisites:
+    Открыта страница https://codebattle.hexlet.io/
+  test-data: |
+    Password: qwertyuiop[]asdfghj
+  steps:
+    - Нажимаем кнопку "Sign Up"
+    - Вводим Nickname, например qqqazzz
+    - Вводим Email, например qwer@google.com
+    - Вводим Password qwertyuiop[]asdfghj
+    - Вводим Password в Password Confirmation
+    - Нажимаем "Submit"
+  expected-result: |
+    Выводится предупреждающее сообщение, что пароль должен содержать в себе от 6 до 16 символов
 
 - summary: |
     Успешная авторизация через GitHub
   requirement: |
     Пользователь успешно авторизуется через личный кабинет GitHub
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/
+    Пользователь имеет аккаунт на GitHub
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Sign in"
+    - Нажимаем кнопку "Sign in with Github"
+    - Автоматически перенаправляет на страницу авторизации GitHub
+    - Ввести учетные данные GitHub
+    - Нажать "Authorize"
   expected-result: |
-    
+    Пользователь успешно авторизован на сайте через GitHub
 
 - summary: |
     Успешная авторизация через Discord
   requirement: |
     Пользователь успешно авторизуется через личный кабинет Discord
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/
+    Пользователь имеет аккаунт на Discord
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Sign in"
+    - Нажимаем кнопку "Sign in with Discord"
+    - Автоматически перенаправляет на страницу авторизации Discord
+    - Ввести учетные данные Discord
+    - Нажать "Authorize"
   expected-result: |
-    
+    Пользователь успешно авторизован на сайте через Discord
 
 - summary: |
     Успешная авторизация через электронную почту
   requirement: |
     Пользователь должен успешно авторизоваться с использованием электронной почты
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/
+    Пользователь имеет аккаунт на Codebattle
   test-data: |
-    
+    Email: test-play@google.com
+    Password: test-play
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку "Sign in"
+    - Вводим email
+    - Вводим password
+    - Нажимаем "Submit" 
   expected-result: |
-    
+    Пользователь успешно авторизован и перенаправлен на главную страницу
 
 - summary: |
     Проверка возможности запустить игру без регистрации
   requirement: |
     Пользователь может запустить игру без регистрации
   prerequisites:
-    
+    Открыта страница https://codebattle.hexlet.io/
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем "TRY SIMPLE BATTLE"
   expected-result: |
-    
+    Запускается игра без требования для регистрации
 
 - summary: |
     Проверка возможности поменять язык программирования для решения задачи в игре
   requirement: |
     Пользователь может поменять язык для решения задачи
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем на кнопку выбора языка программирования в редакторе кода
+    - В выпадающем списке выбираем язык программирования, отличный от изначально установленного, например Ryby
   expected-result: |
-    
+    Язык программирования в редакторе кода меняется на тот, который мы выбрали
 
 - summary: |
     Проверка возможности сменить язык для чтения задачи
   requirement: |
     Пользователь может поменять язык для чтения задачи
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - К описанию задачи нажимаем на выпадающий список с выбором языка
+    - Нажимаем RU
+    - Нажимаем на выпадающий список с выбором языка
+    - Нажимаем EN
   expected-result: |
-    
+    Описание задачи меняет свой язык с английского на русский и с русского на английский
 
 - summary: |
     Проверка возможности прочитать краткое руководство к игре через кнопку "Show guide"
   requirement: |
     Пользователь может посмотреть руководство в игре
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем на кнопку "Show guide"  
   expected-result: |
-    
+    Запускается руководство к игре
 
 - summary: |
     Проверка возможности смены фона в редакторе кода
   requirement: |
     Пользователь может поменять фон в редакторе кода
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Нажимаем кнопку с символом солнца
   expected-result: |
-    
+    Фон в редакторе кода меняется с черного на белый
 
 - summary: |
-    Проверка возможности проверить решение использовав кнопку "Run"
+    Проверка возможности проверить правильное решение использовав кнопку "Run"
   requirement: |
     Пользователь может проверить свое решение 
   prerequisites:
-    
+    Запущена игра
   test-data: |
-    
+    no data
   steps:
-    - 
-    - 
-    - 
+    - Вводим решение в редакторе кода
+    - Нажимаем кнопку "Run"
   expected-result: |
-    
+    Выводится сообщение, что решение верное
+
+- summary: |
+    Проверка возможности проверить неправильное решение использовав кнопку "Run"
+  requirement: |
+    Пользователь может проверить свое решение
+  prerequisites:
+    Запущена игра
+  test-data: |
+    no data
+  steps:
+    - Нажимаем кнопку "Run"
+  expected-result: |
+    Выводится сообщение, что решение неверное
 
 - summary: |
     Проверка возможности сдаться через кнопку "Give up"
@@ -299,9 +341,11 @@
   test-data: |
     
   steps:
-    - 
-    - 
-    - 
+    - Выбираем Level 1
+    - Выбираем Game Type: With a bot
+    - Выбираем Time control: 10 min
+    - Выбираем игру из выпадающего списка Choose task by name or tags, например "rect_area"
+    - Нажимаем "Create battle"
   expected-result: |
     
 
