@@ -39,6 +39,24 @@
     Выводится предупреждающее сообщение, что nickname занят
 
 - summary: |
+    Проверка невозможности зарегистрироваться с несуществующим email
+  requirement: |
+    Email должен быть указан корректно
+  prerequisites:
+    Открыта страница https://codebattle.hexlet.io/
+  test-data: |
+    Email: nhbchjdh@bhbhhh.ru
+  steps:
+    - Нажимаем кнопку "Sign Up"
+    - Вводим Nickname, например erfgdj
+    - Вводим Email nhbchjdh@bhbhhh.ru
+    - Вводим Password, например 123456
+    - Вводим Password в Password Confirmation
+    - Нажимаем "Submit"
+  expected-result: |
+    Выводится предупреждающее сообщение, что email введен некорректно
+
+- summary: |
     Проверка невозможности зарегистрироваться с одним email дважды
   requirement: |
     Только один пользователь может зарегистрироваться с одним Email
@@ -609,3 +627,17 @@
     - Нажимаем Save
   expected-result: |
     Создается пакет задач
+
+- summary: |
+    Проверка невозможности отправить пустое сообщение в чат
+  requirement: |
+    Пользователь не может отправить пустое сообщение в чат
+  prerequisites:
+    Открыта страница https://codebattle.hexlet.io/#lobby
+  test-data: |
+    no data
+  steps:
+    - Оставляем пробел в чате
+    - Нажимаем "Send"
+  expected-result: |
+    Сообщение не отправляется
