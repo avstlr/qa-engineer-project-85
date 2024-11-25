@@ -353,7 +353,7 @@
   steps:
     - Нажимаем кнопку "Create a game"
     - Выбираем Level, например 1
-    - Выбираем Game Type: "With a bot"
+    - Выбираем Game Type "With a bot"
     - Выбираем Time control, например 10 min
     - Выбираем игру из выпадающего списка Choose task by name or tags, например "rect_area"
     - Нажимаем "Create battle"
@@ -371,7 +371,7 @@
   steps:
     - Нажимаем кнопку "Create a game"
     - Выбираем Level, например 1
-    - Выбираем Game Type: "With other user"
+    - Выбираем Game Type "With other user"
     - Выбираем Time control, например 10 min
     - Выбираем игру из выпадающего списка Choose task by name or tags, например "rect_area"
     - Нажимаем "Create battle"
@@ -389,7 +389,7 @@
   steps:
     - Нажимаем кнопку "Create a game"
     - Выбираем Level, например 1
-    - Выбираем Game Type: "With a friend"
+    - Выбираем Game Type "With a friend"
     - Выбираем Time control, например 10 min
     - В выпадающем списке Choose opponent выбираем друга из списка
     - Выбираем игру из выпадающего списка Choose task by name or tags, например "rect_area"
